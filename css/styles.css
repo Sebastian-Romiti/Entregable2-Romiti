@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  min-height: 100dvh;
+  background-color: rgb(255, 255, 245);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h3 {
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  background-color: black;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: black;
+}
+
+.turnero-container {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  width: 500px;
+  background-color: white;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+}
+
+button {
+  background: #4caf50;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+.listadoReserva {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.listadoTurnos {
+  padding: 0;
+}
+
+.listadoTurnos ul {
+  list-style: none;
+}
+
+.turno-item {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
