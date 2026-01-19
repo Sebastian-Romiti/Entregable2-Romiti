@@ -8,8 +8,10 @@
 }
 
 .wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/bg-image.jpg);
+  background-position: center;
+  background-size: cover;
   min-height: 100vh;
-  background-color: #f9f9f4;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -17,10 +19,22 @@
 }
 
 /* TITULOS */
-h1,
-h3 {
-  background: black;
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+h2 {
   color: white;
+  text-align: center;
+}
+
+h3 {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 10px 25px;
   border-radius: 20px;
   margin-bottom: 30px;
@@ -28,7 +42,7 @@ h3 {
 
 /* CONTENEDOR FORM */
 .turnero-container {
-  background: white;
+  background-color: rgba(255, 255, 255, 0.108);
   width: 420px;
   padding: 20px;
   border-radius: 20px;
@@ -40,6 +54,8 @@ h3 {
 input,
 select,
 button {
+  border-radius: 10px;
+  border: none;
   width: 100%;
   margin-top: 10px;
   padding: 10px;
@@ -71,7 +87,7 @@ button:hover {
 
 /* ITEM TURNO */
 .turno-item {
-  background: white;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 15px;
   border-radius: 20px;
   margin-bottom: 10px;
