@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simulador Turnero Barberia</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <h1>Simulador Turnero de Barberia</h1>
-      <div class="turnero-container">
-        <h2>Solicitar Turno</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
 
-        <form id="formTurno">
-          <input
-            type="text"
-            id="nombre"
-            placeholder="Ingresa tu nombre"
-            required
-          />
-          <select id="servicio" required>
-            <option value="">Elegir servicio</option>
-            <option value="Corte de pelo">Corte de pelo</option>
-            <option value="Barba">Barba</option>
-          </select>
-          <input type="date" id="fecha" required />
-          <input type="time" id="hora" required />
-          <button type="submit">Agregar turno</button>
-        </form>
-      </div>
-      <div class="listadoReserva">
-        <h3>Turnos Reservados</h3>
-        <div class="listadoTurnos">
-          <ul id="listaTurnos"></ul>
-        </div>
-      </div>
+  <link rel="stylesheet" href="css/styles.css" />
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <title>Simulador Turnero Barbería</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Simulador Turnero de Barbería</h1>
+
+    <div class="turnero-container">
+      <h2>Solicitar Turno</h2>
+
+      <form id="formTurno">
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
+
+        <select id="servicio">
+          <option value="">Elegir servicio</option>
+        </select>
+
+        <input type="date" id="fecha" />
+        <input type="time" id="hora" />
+
+        <button type="submit">Agregar turno</button>
+      </form>
     </div>
 
-    <script src="js/main.js"></script>
-  </body>
+    <div class="listadoReserva">
+      <h3>Turnos Reservados</h3>
+      <ul id="listaTurnos"></ul>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
